@@ -1,0 +1,630 @@
+body{
+    background-color: #cbcab2;
+    overflow-y: scroll;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+section{
+    flex: 1;
+    display: flex;
+}
+.content{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.eighty{
+    width: 80%;
+    margin: auto;
+}
+.column{
+    width: 49%;
+}
+
+.column60 {
+  width: 80%;
+}
+/* Fonts */
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Raleway;
+    text-align: center;
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Roboto;
+    text-align: center;
+}
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+h4{
+    font-size: 18px;
+    font-family: Roboto;
+}
+h5{
+    font-size: 16px;
+    font-family: Roboto;
+}
+h6{
+    font-size: 12px;
+    font-family: Roboto;
+}
+p{
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: normal;
+}
+
+.booking{
+    font-size: 16px;
+    font-family: Roboto;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/* Font style */
+.bold{
+    font-weight: 500;
+}
+.let-font {
+font-weight: 300;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #cd9508;
+}
+.menu:hover{
+    border-bottom: 10px solid #cd9508;
+    padding-bottom: 18px;
+}
+.current{
+    border-bottom: 10px solid #cd9508;
+    padding-bottom: 18px;
+    color: #cd9508;
+}
+
+/* Skrift farve */
+.font-blue{
+    color: #010736;
+}
+.font-gold{
+    color: #cd9508;
+}
+.font-white{
+    color: #fff;
+}
+.prsmed {
+  color: black;
+}
+.lineheigt {
+  line-height:normal;
+}
+/* Baggrunde */
+.bg-blue{
+    background-color: #010736;
+}
+.bg-gold{
+    background-color: #cd9508;
+}
+.bg-white{
+    background-color: #fff;
+}
+.shadow{
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+/* Flex */
+.flex{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.space{
+    justify-content: space-between;
+}
+.left{
+    justify-content: flex-start;
+}
+.center{
+    justify-content: center;
+}
+.right{
+    justify-content: flex-end;
+}
+.middle{
+    align-items: center;
+}
+.flex-2 {
+    display: flex;
+    flex: 2;
+}
+/* Margin */
+.margin-l-10{
+    margin-left: 10px;
+}
+.margin-l-15{
+    margin-left: 15px;
+}
+.margin-lf-20{
+    margin: 0px 20px;
+}
+.margin-t-10{
+    margin-top: 10px;
+}
+.margin-t-15{
+    margin-top: 15px;
+}
+.margin-t-20{
+    margin-top: 20px;
+}
+
+
+
+/* Padding */
+.padbot {
+  padding-bottom: 50px;
+}
+.padoverskrift {
+    padding: 50px 0 50px 0;
+}
+.padtekst {
+    padding: 3% 0 1% 0;
+}
+.padpres {
+  padding-bottom: 2%;
+}
+.padprog {
+padding: 3%;
+}
+
+.padding-left {
+padding-left: 10px;
+}
+
+.padright {
+  20%;
+}
+
+/* Header */
+header{
+    height: 101px;
+    z-index: 25;
+}
+.logo{
+    height: 90px;
+    float:none;
+    margin-top: -15px;
+}
+
+/* Footer */
+footer{
+    height: 100px;
+    width: 100%;
+    z-index: 25;
+}
+.some{
+    width: 100px;
+}
+.some-logo{
+    width: 35px;
+    height: 100%;
+}
+
+/* Praktisk info */
+.kort{
+    width: 100%;
+}
+
+/* Images */
+.imgheight {
+    height: 100%;
+}
+.imgpadleft {
+    padding-left: 10px;
+  }
+.imgpadbot {
+  padding-bottom: 10px;
+}
+
+.imgindex {
+width: 100%;
+height:auto;
+}
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/johan-baggrund.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  background-position: right;
+  padding-left: 40px;
+  padding-top: 10%;
+  height: 600px;
+}
+
+.klistermaerke {
+  width: 22%;
+  height:0;
+  padding-bottom: 22%;
+  border-radius: 50%;
+  background: #010736;
+  position: relative;
+}
+
+.klistermaerke2 {
+  width: 12%;
+  height:0;
+  padding-bottom: 12%;
+  border-radius: 50%;
+  background: #010736;
+  position: absolute;
+}
+
+.klister-tekst{
+padding-left: 5%;
+padding-top: 35%;
+color: #fff;
+}
+
+.klister-tekst2{
+margin-left: -15%;
+padding-top: 25%;
+color: #fff;
+transform: rotate(-15deg);
+font-size: 120%;
+}
+
+.klister-tekst3{
+margin-left: 0%;
+padding-top: 0%;
+color: #fff;
+transform: rotate(-15deg);
+font-size: 120%;
+}
+
+.klister-margin{
+margin-left: 4%;
+margin-top: 4%;
+}
+
+.klister-margin2{
+margin-left: 15%;
+margin-top: 8%;
+}
+/* Presse */
+
+
+/* Kampagne */
+.kambag {
+  display: flex;
+  background-image: url(../img/johan.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+.logowidth {
+  width:25%;
+  height: 25%;
+}
+.talebobbel {
+  position: absolute;
+  width: 35%;
+  height: 50%;
+  left: 0;
+  background-image: url(../img/talebobbel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.talebobbel2 {
+  position: absolute;
+  right:0;
+  width: 35%;
+  height: 50%;
+  background-image: url(../img/talebobbel2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.talebobbel:hover, .talebobbel2:hover, .ledesend:hover{
+  cursor: pointer;
+}
+.km1 {
+  position:absolute;
+  top: 45%;
+  left: 30%;
+}
+.km2 {
+  position: absolute;
+  top: 45%;
+  right: 30%;
+  text-align: center;
+}
+.modaltalebobbel1 {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1% 2% 4% 2%;
+    width: 50%;
+}
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 30%;
+  padding: 1% 2% 4% 2%;
+  width: 50%;
+ }
+ .modaltalebobbel3 {
+   background-color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   height:3%;
+   padding: 1% 2% 3% 2%;
+   width: 25%;
+  }
+.ledesend {
+  background-color: #010736;
+  color: white;
+  height: 40px;
+  width: 200px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+  float: right;
+}
+.close, .close2, .close3 {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close2:hover, .close3:hover {
+  cursor:pointer;
+}
+
+.modalbackground, .modalbackground2, .modalbackground3 {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+#husk{
+    display: none;
+}
+
+/*Program*/
+
+.text-center {
+text-align: center;
+}
+.width-100 {
+width: 100%;
+}
+.width-25 {
+width: 25%;
+}
+.width-33 {
+width: 33%;
+height: 100%;
+}
+.kalender-box{
+flex-direction: column;
+justify-content: flex-start;
+box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.75);
+cursor: pointer;
+
+}
+
+/*Booking*/
+.fnavn {
+  width: 100%;
+  height: 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.enavn, .email, .gæster, .ankomst, .afrejse {
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.kommentarer{
+  width: 100%;
+  margin-top: 10px;
+  height: 150px;
+  border-radius: 4px;
+  resize: none;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.send {
+  background-color: #010736;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border: none;
+  float: right;
+  font-size: 16px;
+  font-family: Roboto;
+  cursor: pointer;
+}
+
+#erbooket{
+  display: none;
+}
+
+#booket {
+  display: none;
+}
+
+/*Kontakt*/
+.ksend {
+  background-color: #010736;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+  cursor: pointer;
+}
+
+.kontaktknap{
+  margin-top: 50px;
+}
+
+.kontakth4{
+  text-align: center;
+}
+
+.vsend, .fsend, .psend{
+  background-color: #010736;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+  margin: 0 20px 40px 20px;
+  cursor: pointer;
+}
+/*Modal*/
+.modal1, .modal2, .modal3, .modal4, .modal5 {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 250px;
+}
+
+  .modal-boks{
+  margin-top: 100px;
+  background-color: white;
+  padding:10px;
+  margin: auto;
+  width: 40%;
+}
+.luk1, .luk2, .luk3, .luk4, .luk5{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.luk1:hover, .luk2:hover, .luk3:hover, .luk4:hover, .luk5:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.luk1:focus, .luk2:focus, .luk3:focus, .luk4:focus, .luk5:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.indexoverskrift{
+  padding: 10px 0 0 0;
+}
+
+#mapDiv{
+  width: 100%;
+  height: 350px;
+}
+
+.fb-page, .fb-page iframe[style], .fb-page span {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 1366px) {
+  .km1 {
+    position:absolute;
+    top: 41%;
+    left: 24%;
+  }
+  .km2 {
+    position: absolute;
+    top: 41%;
+    right: 24%;
+    text-align: center;
+  }
+.kambag {
+  height: 700px;
+}
+
+.modaltalebobbel1 {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 4% 2% 4% 2%;
+    width: 50%;
+}
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1% 2% 11% 2%;
+  width: 50%;
+ }
+ .modaltalebobbel3 {
+   background-color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   height:8%;
+   padding: 1% 2% 3% 2%;
+   width: 25%;
+  }
+
+  .close:hover, .close2:hover, .close3:hover {
+    cursor:pointer;
+  }
