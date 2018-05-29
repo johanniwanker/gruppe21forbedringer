@@ -1,3 +1,4 @@
+/* Booking */
 
 function setLocal(localName) {
   var email = localName;
@@ -35,14 +36,7 @@ function setData(event) {
       sendData.style.display = "block";
   })};
 
-
-
-
-
   var husk = document.querySelector("#husk");
-
-
-
 
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
@@ -213,16 +207,33 @@ lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
 })};
 
-/*Booking*/
+/*Foreninger/Virksomheder*/
 
+function tjekInputForVirk(event) {
+    var forVirkNavn = document.querySelector(".for-virk-navn");
+    var forVirkMail = document.querySelector(".for-virk-mail");
+    var forVirkKommentar = document.querySelector(".for-virk-kommentar");
 
+    var forVirkNavnet = forVirkNavn.value;
+    var forVirkMailen = forVirkMail.value;
+    var forVirkKommentaren = forVirkKommentar.value;
 
+    var inputJa = document.querySelector(".input-udfyldt");
+    var inputNej = document.querySelector(".husk-input");
 
-/*function store(){
-    var inputEmail= document.getElementById("email");
-    localStorage.setItem("email", inputEmail.value);
-  };
+    if(forVirkKommentaren != '' && forVirkMailen != '' && forVirkNavnet != ''){
+          inputJa.style.display = "block";
+          inputNej.style.display = "none";
+}else{
+      inputNej.style.display = "block";
+      inputJa.style.display = "none";
+}
+}
 
+var tjekInputTil = document.querySelector(".tjek-input");
+if (tjekInputTil){
+    tjekInputTil.addEventListener("click", tjekInputForVirk);
+}
 
 
 

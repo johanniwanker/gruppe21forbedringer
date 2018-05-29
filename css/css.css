@@ -628,3 +628,12 @@ cursor: pointer;
   .close:hover, .close2:hover, .close3:hover {
     cursor:pointer;
   }
+
+/*Til foreninger/Til virksomheder*/
+.husk-input{
+    display: none;
+}
+
+.input-udfyldt{
+    display: none;
+}
