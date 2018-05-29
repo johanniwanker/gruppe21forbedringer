@@ -207,7 +207,7 @@ lukModal5.addEventListener("click", function(event){
     modal5.style.display = "none";
 })};
 
-/*Foreninger/Virksomheder*/
+/*Kontaktformularer (Virksomhed, forening, kontakt)*/
 
 function tjekInputForVirk(event) {
     var forVirkNavn = document.querySelector(".for-virk-navn");
