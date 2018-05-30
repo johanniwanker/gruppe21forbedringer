@@ -473,4 +473,76 @@ function initMap() {
     title: 'Toilet ved bibliotek',
     icon: 'img/toilet.png'
   });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.621512, lng: 8.479924},
+    map: map,
+    title: 'Parkering ved Fogtmanns Pl.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.620906, lng: 8.481099},
+    map: map,
+    title: 'Parkering ved Murtfeldts Pl.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.618364, lng: 8.481205},
+    map: map,
+    title: 'Parkering ved Åen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.618340, lng: 8.483608},
+    map: map,
+    title: 'Parkering ved Åen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.618908, lng: 8.474939},
+    map: map,
+    title: 'Parkering ved Jacobi-Hallen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.620998, lng: 8.475148},
+    map: map,
+    title: 'Parkering ved Jacobi-Hallen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.617612, lng: 8.477687},
+    map: map,
+    title: 'Begivenheder ved Åen.',
+    icon: 'img/logomarker.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.620467, lng: 8.479980},
+    map: map,
+    title: 'Begivenheder på Torvet.',
+    icon: 'img/logomarker.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.622003, lng: 8.482061},
+    map: map,
+    title: 'Begivenheder ved St. Nicolai Pl.',
+    icon: 'img/logomarker.png'
+  });
 }
