@@ -637,3 +637,11 @@ cursor: pointer;
 .input-udfyldt{
     display: none;
 }
+
+.mangler-input{
+  display: none;
+}
+
+.input-gjort{
+  display: none;
+}

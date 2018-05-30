@@ -38,6 +38,41 @@ function setData(event) {
 
   var husk = document.querySelector("#husk");
 
+
+
+  function tjekInputForBook(event) {
+      var forBookFnavn = document.querySelector(".book-fnavn");
+      var forBookEnavn = document.querySelector(".book-enavn");
+      var forBookMail = document.querySelector(".book-mail");
+      var forBookGæster = document.querySelector(".book-gæster");
+      var forBookAnkomst = document.querySelector(".book-ankomst");
+      var forBookAfrejse = document.querySelector(".book-afrejse");
+
+      var forBookFnavnet = forBookFnavn.value;
+      var forBookEnavnet = forBookEnavn.value;
+      var forBookMailen = forBookMail.value;
+      var forBookGæsterne = forBookGæster.value;
+      var forBookAnkomsten = forBookAnkomst.value;
+      var forBookAfrejsen = forBookAfrejse.value;
+
+
+      var inputGjort = document.querySelector("#booket");
+      var inputMangler = document.querySelector(".mangler-input");
+
+      if(forBookAfrejsen != '' && forBookAnkomstn != '' && forBookGæsterne != '' && forBookMailen != '' && forBookEnavnet != '' && forBookFnavnet != ''){
+            inputGjort.style.display = "block";
+            inputMangler.style.display = "none";
+  }else{
+        inputMangler.style.display = "block";
+        inputGjort.style.display = "none";
+  }
+  }
+
+  var tjekInputFra = document.querySelector(".tjek-book");
+  if (tjekInputFra){
+      tjekInputFra.addEventListener("click", tjekInputForBook);
+  }
+
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
 var modalbackground2 = document.querySelector(".modalbackground2");
