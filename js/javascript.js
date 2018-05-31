@@ -270,6 +270,23 @@ if (tjekInputTil){
     tjekInputTil.addEventListener("click", tjekInputForVirk);
 }
 
+// Mobil menu
+var aaben = document.querySelector(".aaben");
+var luk = document.querySelector(".luk");
+var mobilMenu = document.querySelector(".mobile-menu");
+
+if(aaben){
+aaben.addEventListener("click", function(event){
+    aaben.style.display = "none";
+    luk.style.display = "flex";
+    mobilMenu.style.display = "block";
+})};
+if(luk){
+luk.addEventListener("click", function(event){
+    aaben.style.display = "flex";
+    luk.style.display = "none";
+    mobilMenu.style.display = "none";
+})};
 
 
 /*Kortet*/
