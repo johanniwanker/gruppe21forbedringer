@@ -727,4 +727,21 @@ cursor: pointer;
     footer{
         height: 100%;
     }
+
+    .imgomos {
+      display: none;
+    }
+    .omospadbot {
+      padding-bottom: 5%;
+    }
+
+    .mediarow {
+      display: flex;
+      flex-direction: column;
+    }
+    .column1 {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
 }
