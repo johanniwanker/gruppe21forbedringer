@@ -1,4 +1,4 @@
-body{
+  body{
     background-color: #cbcab2;
     overflow-y: scroll;
     min-height: 100vh;
@@ -657,6 +657,9 @@ cursor: pointer;
     .presspic{
         width: 90px;
         height: 100%;
+    }
+    .padmediaright {
+      margin-right: 8%;
     }
 }
 
