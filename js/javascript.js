@@ -1,3 +1,4 @@
+/* Booking */
 
 function setLocal(localName) {
   var email = localName;
@@ -35,14 +36,42 @@ function setData(event) {
       sendData.style.display = "block";
   })};
 
-
-
-
-
   var husk = document.querySelector("#husk");
 
 
 
+  function tjekInputForBook(event) {
+      var forBookFnavn = document.querySelector(".book-fnavn");
+      var forBookEnavn = document.querySelector(".book-enavn");
+      var forBookMail = document.querySelector(".book-mail");
+      var forBookGæster = document.querySelector(".book-gæster");
+      var forBookAnkomst = document.querySelector(".book-ankomst");
+      var forBookAfrejse = document.querySelector(".book-afrejse");
+
+      var forBookFnavnet = forBookFnavn.value;
+      var forBookEnavnet = forBookEnavn.value;
+      var forBookMailen = forBookMail.value;
+      var forBookGæsterne = forBookGæster.value;
+      var forBookAnkomsten = forBookAnkomst.value;
+      var forBookAfrejsen = forBookAfrejse.value;
+
+
+      var inputGjort = document.querySelector("#booket");
+      var inputMangler = document.querySelector(".mangler-input");
+
+      if(forBookAfrejsen != '' && forBookAnkomstn != '' && forBookGæsterne != '' && forBookMailen != '' && forBookEnavnet != '' && forBookFnavnet != ''){
+            inputGjort.style.display = "block";
+            inputMangler.style.display = "none";
+  }else{
+        inputMangler.style.display = "block";
+        inputGjort.style.display = "none";
+  }
+  }
+
+  var tjekInputFra = document.querySelector(".tjek-book");
+  if (tjekInputFra){
+      tjekInputFra.addEventListener("click", tjekInputForBook);
+  }
 
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
@@ -167,15 +196,63 @@ if (lukModal){
     modal[0].style.display = "none";
 })};
 
-/*Booking*/
+/*Kontaktformularer (Virksomhed, forening, kontakt)*/
 
+function tjekInputForVirk(event) {
+    var forVirkNavn = document.querySelector(".for-virk-navn");
+    var forVirkMail = document.querySelector(".for-virk-mail");
+    var forVirkKommentar = document.querySelector(".for-virk-kommentar");
 
+<<<<<<< HEAD
 /*function store(){
     var inputEmail= document.getElementById("email");
     localStorage.setItem("email", inputEmail.value);
   };
+=======
+    var forVirkNavnet = forVirkNavn.value;
+    var forVirkMailen = forVirkMail.value;
+    var forVirkKommentaren = forVirkKommentar.value;
+
+    var inputJa = document.querySelector(".input-udfyldt");
+    var inputNej = document.querySelector(".husk-input");
+
+    if(forVirkKommentaren != '' && forVirkMailen != '' && forVirkNavnet != ''){
+          inputJa.style.display = "block";
+          inputNej.style.display = "none";
+}else{
+      inputNej.style.display = "block";
+      inputJa.style.display = "none";
+}
+}
+>>>>>>> 6c432b4b3b9417b4c75154ed35134a2317284d9f
+
+var tjekInputTil = document.querySelector(".tjek-input");
+if (tjekInputTil){
+    tjekInputTil.addEventListener("click", tjekInputForVirk);
+}
+
+<<<<<<< HEAD
+=======
+// Mobil menu
+var aaben = document.querySelector(".aaben");
+var luk = document.querySelector(".luk");
+var mobilMenu = document.querySelector(".mobile-menu");
+
+if(aaben){
+aaben.addEventListener("click", function(event){
+    aaben.style.display = "none";
+    luk.style.display = "flex";
+    mobilMenu.style.display = "block";
+})};
+if(luk){
+luk.addEventListener("click", function(event){
+    aaben.style.display = "flex";
+    luk.style.display = "none";
+    mobilMenu.style.display = "none";
+})};
 
 
+>>>>>>> 6c432b4b3b9417b4c75154ed35134a2317284d9f
 /*Kortet*/
 
 //Laver global variable
@@ -376,5 +453,77 @@ function initMap() {
     map: map,
     title: 'Toilet ved bibliotek',
     icon: 'img/toilet.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.621512, lng: 8.479924},
+    map: map,
+    title: 'Parkering ved Fogtmanns Pl.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.620906, lng: 8.481099},
+    map: map,
+    title: 'Parkering ved Murtfeldts Pl.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.618364, lng: 8.481205},
+    map: map,
+    title: 'Parkering ved Åen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.618340, lng: 8.483608},
+    map: map,
+    title: 'Parkering ved Åen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.618908, lng: 8.474939},
+    map: map,
+    title: 'Parkering ved Jacobi-Hallen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.620998, lng: 8.475148},
+    map: map,
+    title: 'Parkering ved Jacobi-Hallen.',
+    icon: 'img/parking.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.617612, lng: 8.477687},
+    map: map,
+    title: 'Begivenheder ved Åen.',
+    icon: 'img/logomarker.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.620467, lng: 8.479980},
+    map: map,
+    title: 'Begivenheder på Torvet.',
+    icon: 'img/logomarker.png'
+  });
+
+  //Sætter en marker på kortet
+  var marker = new google.maps.Marker ({
+    position: {lat: 55.622003, lng: 8.482061},
+    map: map,
+    title: 'Begivenheder ved St. Nicolai Pl.',
+    icon: 'img/logomarker.png'
   });
 }

@@ -1,4 +1,4 @@
-body{
+  body{
     background-color: #cbcab2;
     overflow-y: scroll;
     min-height: 100vh;
@@ -212,6 +212,9 @@ header{
     float:none;
     margin-top: -15px;
 }
+.mobile{
+    display: none;
+}
 
 /* Footer */
 footer{
@@ -311,7 +314,10 @@ margin-left: 15%;
 margin-top: 8%;
 }
 /* Presse */
-
+.presspic{
+    width: 100%;
+    height: 100%;
+}
 
 /* Kampagne */
 .kambag {
@@ -647,3 +653,114 @@ z-index: 99;
   .close:hover, .close2:hover, .close3:hover {
     cursor:pointer;
   }
+
+/*Til foreninger/Til virksomheder*/
+.husk-input{
+    display: none;
+}
+
+.input-udfyldt{
+    display: none;
+}
+
+.mangler-input{
+  display: none;
+}
+
+.input-gjort{
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1366px) {
+    .presspic{
+        width: 90px;
+        height: 100%;
+    }
+    .padmediaright {
+      margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content{
+        width: 80%;
+    }
+    .eighty{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .full-screen{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    header{
+        height: 100%;
+        position: absolute;
+    }
+    .aaben{
+        background-color: #010736;
+        height: 50px;
+        width: 50px;
+        color: white;
+    }
+    .luk{
+        background-color: #010736;
+        height: 50px;
+        width: 50px;
+        display: none;
+        color: white;
+        border-bottom: 1px solid #cd9508;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menuen{
+        background-color: #010736;
+        width: 100vw;
+        height: 50px;
+        border-bottom: 1px solid #cd9508;
+    }
+    .mobile-menuen:last-child{
+        border-bottom: 0px;
+    }
+    .mobil-logo{
+        width: 30px;
+    }
+    footer{
+        height: 100%;
+    }
+
+    .imgomos {
+      display: none;
+    }
+    .omospadbot {
+      padding-bottom: 5%;
+    }
+
+    .mediarow {
+      display: flex;
+      flex-direction: column;
+    }
+    .column1 {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+}

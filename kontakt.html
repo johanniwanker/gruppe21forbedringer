@@ -15,7 +15,7 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body>
-        <header class="bg-blue">
+        <header class="bg-blue full-screen">
             <div class="eighty">
                 <div class="flex right margin-t-10">
                     <h6><a class="font-white" href="til-foreninger.html">Til foreninger</a></h6>
@@ -38,6 +38,23 @@
                 </div>
             </div>
         </header>
+        <header class="mobile">
+            <div class="aaben flex center middle"><h2>­≡</h2></div>
+            <div class="luk flex center middle"><h2>­≡</h2></div>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="mobile-menuen flex middle center"><h5><a href="index.html">Forside</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="kampagne.html">Kogemutter</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="historie.html">Historie</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="program.html">Program</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="praktisk.html">Praktisk</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="booking.html">Booking</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><img class="mobil-logo" src="img/logogul.png" alt="logo"><h5><a class="font-gold" href="kontakt.html">Kontakt</a></h5><img class="mobil-logo" src="img/logogul.png" alt="logo"></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="til-foreninger.html">Til foreninger</a></h5></li>
+                    <li class="mobile-menuen flex middle center"><h5><a href="til-virksomheder.html">Til virksomheder</a></h5></li>
+                </ul>
+            </div>
+        </header>
 
         <section class="content shadow bg-white">
             <div class="margin-t-10 margin-lf-20 flex-column middle">
@@ -46,11 +63,11 @@
                   <div class="column">
                     <h5>Har du nogle spørgsmål eller problemer, kan du nemt komme i kontakt med os ved at udfylde nedenstående formular.</h5>
                     <form>
-                      <input class="fnavn margin-t-10" type="text" name="fname" placeholder="Navn">
-                      <input class="email" type="email" name="mail" placeholder="E-mail">
-                      <textarea  placeholder="Hvad kan vi hjælpe med?" class="kommentarer" name="kommentar"></textarea>
+                      <input class="fnavn margin-t-10 for-virk-navn" type="text" name="fname" placeholder="Navn">
+                      <input class="email for-virk-mail" type="email" name="mail" placeholder="E-mail">
+                      <textarea  placeholder="Hvad kan vi hjælpe med?" class="kommentarer for-virk-kommentar" name="kommentar"></textarea>
                     </form>
-                    <button class="ksend margin-t-10" type="button">Send</button>
+                    <button class="ksend margin-t-10 tjek-input" type="button">Send</button>
                   </div>
                     <div class="column"><h5>Hvis du mangler noget mere uddybende, så skriv eller ring endelig på følgende:</h5>
                       <h5 class="margin-t-20">Tlf:</h5>
@@ -59,6 +76,16 @@
                       <h5>vardemail@varde.com:</h5>
                       <h5 class="margin-t-20">Adresse</h5>
                       <h5>Vardevej 1, Varde 6800</h5>
+                      <div class="margin-t-20 husk-input">
+                          <h5 class="bold">
+                              Husk at udfylde alle felterne, inden du trykker send.
+                          </h5>
+                      </div>
+                      <div class="margin-t-20 input-udfyldt">
+                          <h5 class="bold">
+                              Tak for din mail! Vi vender tilbage hurtigst muligt.
+                          </h5>
+                      </div>
                     </div>
                 </div>
                 <div class="kontaktknap">
@@ -75,7 +102,7 @@
 
         </section>
 
-        <footer class="bg-blue">
+        <footer class="bg-blue full-screen">
             <div class="flex space content font-white">
                 <div>
                     <h6 class="margin-t-10 bold">Adresse</h6>
@@ -97,5 +124,28 @@
                 </div>
             </div>
         </footer>
+        <footer class="mobile bg-blue">
+            <div class="flex-column middle content font-white">
+                <div class="flex-column middle">
+                    <h6 class="margin-t-10"><a href="om.html">Om os</a></h6>
+                    <h6 class="margin-t-10"><a href="til-foreninger.html">Foreninger</a></h6>
+                    <h6 class="margin-t-10"><a href="til-virksomheder.html">Virksomheder</a></h6>
+                    <h6 class="margin-t-10"><a href="presse.html">Presse</a></h6>
+                </div>
+                <div class="flex-column middle">
+                    <h6 class="margin-t-10 bold">Adresse</h6>
+                    <h6 class="margin-t-10">Vardevej 1</h6>
+                    <h6 class="margin-t-10">Varde 9999</h6>
+                </div>
+                <div class="flex-column middle">
+                    <h6 class="margin-t-10">Følg os</h6>
+                    <div class="flex space some margin-t-10">
+                        <a href="https://www.facebook.com/kulturugen/" target="_blank"><img class="some-logo" src="img/fb.png"></a>
+                        <a href="https://www.instagram.com/vardekommune/" target="_blank"><img class="some-logo" src="img/insta.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/javascript.js"></script>
     </body>
 </html>
