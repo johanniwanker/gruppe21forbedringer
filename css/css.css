@@ -439,6 +439,12 @@ width: 25%;
 width: 33%;
 height: 100%;
 }
+
+.width-35 {
+width: 35%;
+}
+
+
 .kalender-box{
 flex-direction: column;
 justify-content: flex-start;
@@ -527,7 +533,7 @@ cursor: pointer;
   cursor: pointer;
 }
 /*Modal*/
-.modal1, .modal2, .modal3, .modal4, .modal5 {
+.modalHer {
   display: none;
   position: fixed;
   z-index: 100;
@@ -539,12 +545,25 @@ cursor: pointer;
   padding-top: 250px;
 }
 
+#sigurdHidden, #mikkelHidden, #smedHidden, #honningHidden, #garnHidden {
+  display: none;
+}
+
+.eventBlock {
+  display: block;
+}
+
+.test {
+z-index: 99;
+
+}
   .modal-boks{
   margin-top: 100px;
   background-color: white;
   padding:10px;
   margin: auto;
   width: 40%;
+  z-index: 101;
 }
 .luk1, .luk2, .luk3, .luk4, .luk5{
     color: #aaa;

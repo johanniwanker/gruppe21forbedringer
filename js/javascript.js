@@ -122,108 +122,58 @@ window.onclick = function(event) {
 
 /* Program */
 
-var modal1 = document.querySelector(".modal1");
-var modal2 = document.querySelector(".modal2");
-var modal3 = document.querySelector(".modal3");
-var modal4 = document.querySelector(".modal4");
-var modal5 = document.querySelector(".modal5");
+var modal = document.querySelectorAll(".modalHer");
+var eventKnap = document.querySelectorAll(".eventKnap");
+var lukModal = document.querySelector(".luk1");
 
-var visModalSigurd = document.querySelectorAll(".eventSigurd");
-var visModalMikkel = document.querySelectorAll(".eventMikkel");
-var visModalSmed = document.querySelectorAll(".eventSmed");
-var visModalHonning = document.querySelectorAll(".eventHonning");
-var visModalGarn = document.querySelectorAll(".eventGarn");
-
-var lukModal1 = document.querySelector(".luk1");
-var lukModal2 = document.querySelector(".luk2");
-var lukModal3 = document.querySelector(".luk3");
-var lukModal4 = document.querySelector(".luk4");
-var lukModal5 = document.querySelector(".luk5");
-
-
-for(var i=0;i<visModalSigurd.length;i++){
-visModalSigurd[i].addEventListener("click", function(event){
-    modal1.style.display = "block";
-})};
-
-if(modal1){
-lukModal1.addEventListener("click", function(event){
-    modal1.style.display = "none";
-})};
-
-document.onclick = function(event) {
-    if (event.target == modal1) {
-        modal1.style.display = "none";
+for(var i=0;i<eventKnap.length;i++){
+  eventKnap[i].addEventListener("click", function(event){
+  var modal = document.querySelectorAll(".modalHer");
+    for(var i=0;i<modal.length;i++){
+      modal[i].style.display = "block";
+        if (event.currentTarget.classList[4] == "sigurdKnap") {
+          document.querySelector("#sigurdHidden").style.display = "block";
+        }
+        else if (event.currentTarget.classList[4] == "mikkelKnap") {
+          document.querySelector("#mikkelHidden").style.display = "block";
+        }
+        else if (event.currentTarget.classList[4] == "smedKnap") {
+          document.querySelector("#smedHidden").style.display = "block";
+        }
+        else if (event.currentTarget.classList[4] == "honningKnap") {
+          document.querySelector("#honningHidden").style.display = "block";
+        }
+        else if (event.currentTarget.classList[4] == "garnKnap") {
+          document.querySelector("#garnHidden").style.display = "block";
+        }
     }
-    else if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-    else if (event.target == modal3) {
-        modal3.style.display = "none";
-    }
-    else if (event.target == modal4) {
-        modal4.style.display = "none";
-    }
-    else if (event.target == modal5) {
-        modal5.style.display = "none";
+  })
+
+};
+
+window.onclick = function(event) {
+    if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+        document.querySelector("#sigurdHidden").style.display = "none";
+        document.querySelector("#mikkelHidden").style.display = "none";
+        document.querySelector("#smedHidden").style.display = "none";
+        document.querySelector("#honningHidden").style.display = "none";
+        document.querySelector("#garnHidden").style.display = "none";
     }
 };
 
-
-for(var i=0;i<visModalMikkel.length;i++){
-visModalMikkel[i].addEventListener("click", function(event){
-    modal2.style.display = "block";
-})};
-
-if(modal2){
-lukModal2.addEventListener("click", function(event){
-    modal2.style.display = "none";
-})};
-
-
-
-for(var i=0;i<visModalSmed.length;i++){
-visModalSmed[i].addEventListener("click", function(event){
-    modal3.style.display = "block";
-})};
-if(modal3){
-lukModal3.addEventListener("click", function(event){
-    modal3.style.display = "none";
-})};
-
-
-for(var i=0;i<visModalHonning.length;i++){
-visModalHonning[i].addEventListener("click", function(event){
-    modal4.style.display = "block";
-})};
-if(modal4){
-lukModal4.addEventListener("click", function(event){
-    modal4.style.display = "none";
-})};
-
-
-for(var i=0;i<visModalGarn.length;i++){
-visModalGarn[i].addEventListener("click", function(event){
-    modal5.style.display = "block";
-})};
-if(modal5){
-
-
-lukModal5.addEventListener("click", function(event){
-    modal5.style.display = "none";
+if (lukModal){
+  lukModal.addEventListener("click", function(event){
+    modal[0].style.display = "none";
 })};
 
 /*Booking*/
-
-
 
 
 /*function store(){
     var inputEmail= document.getElementById("email");
     localStorage.setItem("email", inputEmail.value);
   };
-
-
 
 
 /*Kortet*/
