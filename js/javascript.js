@@ -59,7 +59,7 @@ function setData(event) {
       var inputGjort = document.querySelector("#booket");
       var inputMangler = document.querySelector(".mangler-input");
 
-      if(forBookAfrejsen != '' && forBookAnkomstn != '' && forBookGæsterne != '' && forBookMailen != '' && forBookEnavnet != '' && forBookFnavnet != ''){
+      if(forBookAfrejsen != '' && forBookAnkomst != '' && forBookGæsterne != '' && forBookMailen != '' && forBookEnavnet != '' && forBookFnavnet != ''){
             inputGjort.style.display = "block";
             inputMangler.style.display = "none";
   }else{
@@ -203,12 +203,11 @@ function tjekInputForVirk(event) {
     var forVirkMail = document.querySelector(".for-virk-mail");
     var forVirkKommentar = document.querySelector(".for-virk-kommentar");
 
-<<<<<<< HEAD
-/*function store(){
+
+function store(){
     var inputEmail= document.getElementById("email");
     localStorage.setItem("email", inputEmail.value);
   };
-=======
     var forVirkNavnet = forVirkNavn.value;
     var forVirkMailen = forVirkMail.value;
     var forVirkKommentaren = forVirkKommentar.value;
@@ -224,15 +223,12 @@ function tjekInputForVirk(event) {
       inputJa.style.display = "none";
 }
 }
->>>>>>> 6c432b4b3b9417b4c75154ed35134a2317284d9f
 
 var tjekInputTil = document.querySelector(".tjek-input");
 if (tjekInputTil){
     tjekInputTil.addEventListener("click", tjekInputForVirk);
 }
 
-<<<<<<< HEAD
-=======
 // Mobil menu
 var aaben = document.querySelector(".aaben");
 var luk = document.querySelector(".luk");
@@ -252,7 +248,6 @@ luk.addEventListener("click", function(event){
 })};
 
 
->>>>>>> 6c432b4b3b9417b4c75154ed35134a2317284d9f
 /*Kortet*/
 
 //Laver global variable
