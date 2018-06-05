@@ -194,6 +194,11 @@ window.onclick = function(event) {
 if (lukModal){
   lukModal.addEventListener("click", function(event){
     modal[0].style.display = "none";
+    document.querySelector("#sigurdHidden").style.display = "none";
+    document.querySelector("#mikkelHidden").style.display = "none";
+    document.querySelector("#smedHidden").style.display = "none";
+    document.querySelector("#honningHidden").style.display = "none";
+    document.querySelector("#garnHidden").style.display = "none";
 })};
 
 /*Kontaktformularer (Virksomhed, forening, kontakt)*/
