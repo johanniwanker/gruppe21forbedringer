@@ -552,6 +552,11 @@ cursor: pointer;
   display: none;
 }
 
+.felter{
+  font-size: 14px;
+  font-family: Roboto;
+}
+
 /*Kontakt*/
 .ksend {
   background-color: #010736;
