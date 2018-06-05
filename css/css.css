@@ -331,7 +331,7 @@ margin-top: 8%;
   width:25%;
   height: 25%;
 }
-.talebobbel {
+/* .talebobbel {
   position: absolute;
   width: 35%;
   height: 50%;
@@ -348,20 +348,65 @@ margin-top: 8%;
   background-image: url(../img/talebobbel2.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
 .talebobbel:hover, .talebobbel2:hover, .ledesend:hover{
   cursor: pointer;
 }
-.km1 {
-  position:absolute;
-  top: 45%;
-  left: 30%;
+
+.speech-bubble {
+	position: relative;
+	background: white;
+	border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
 }
-.km2 {
-  position: absolute;
-  top: 45%;
-  right: 30%;
-  text-align: center;
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 48px solid transparent;
+	border-left-color: white;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -24px;
+	margin-right: -45px;
+}
+
+.speech-bubble2 {
+    position: relative;
+	background: white;
+	border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.speech-bubble2:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 48px solid transparent;
+	border-right-color: white;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -24px;
+	margin-left: -45px;
 }
 .modaltalebobbel1 {
     background-color: #ffffff;
@@ -594,17 +639,6 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 1366px) {
-  .km1 {
-    position:absolute;
-    top: 41%;
-    left: 24%;
-  }
-  .km2 {
-    position: absolute;
-    top: 41%;
-    right: 24%;
-    text-align: center;
-  }
 .kambag {
   height: 700px;
 }
@@ -672,14 +706,6 @@ cursor: pointer;
     .padmediaright {
       margin-right: 8%;
     }
-    .km1{
-        font-size: 22px;
-        margin-top: -10px;
-    }
-    .km2{
-        font-size: 22px;
-        margin-top: -10px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -698,12 +724,6 @@ cursor: pointer;
     .klistermaerke2{
         margin-top: 125px;
         margin-left: 50px;
-    }
-    .km1{
-        font-size: 18px;
-    }
-    .km2{
-        font-size: 18px;
     }
     .modaltalebobbel1{
         height: 200px;
@@ -737,20 +757,16 @@ cursor: pointer;
     .aaben{
         background-color: #010736;
         height: 50px;
-        width: 100vw;
+        width: 50px;
         color: white;
-        justify-content: flex-start;
-        padding-left: 20px;
     }
     .luk{
         background-color: #010736;
         height: 50px;
-        width: 100vw;
+        width: 50px;
         display: none;
         color: white;
         border-bottom: 1px solid #cd9508;
-        justify-content: flex-start;
-        padding-left: 20px;
     }
     .mobile-menu{
         display: none;
@@ -775,14 +791,6 @@ cursor: pointer;
         height: 50px;
         margin-top: 75px;
     }
-    .km1{
-        font-size: 14px;
-        margin-top: -30px;
-    }
-    .km2{
-        font-size: 14px;
-        margin-top: -30px;
-    }
     .kambag{
         height: 600px;
     }
@@ -797,6 +805,49 @@ cursor: pointer;
     .modaltalebobbel3{
         height: 40px;
         width: 60%;
+    }
+    .speech-bubble, .speech-bubble2{
+        width: 200px;
+        height: 200px;
+    }
+    .bubble-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .speech-bubble{
+        width: 200px;
+        height: 200px;
+        margin-top: 40px;
+    }
+    .speech-bubble:after {
+    	border: 28px solid transparent;
+    	border-left-color: white;
+    	border-right: 0;
+    	border-bottom: 0;
+    	margin-top: -10px;
+    	margin-right: -25px;
+    }
+    .speech-bubble2{
+        width: 200px;
+        height: 200px;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .speech-bubble2:after {
+    	border: 28px solid transparent;
+    	border-left-color: white;
+    	border-right: 0;
+    	border-top: 0;
+    	margin-top: -10px;
+    	margin-left: 195px;
+    }
+    .bubble-text{
+        font-size: 22px;
+    }
+    .kambag{
+        flex-direction: column;
     }
 }
 
@@ -847,26 +898,27 @@ cursor: pointer;
     .flex-2 .column{
         width: 100%;
     }
-    .talebobbel{
-        margin-top: 20px;
-        margin-left: -0px;
-        width: 200px;
+    .speech-bubble{
+        width: 100px;
+        height: 100px;
     }
-    .talebobbel2{
-        margin-top: 150px;
-        width: 200px;
-        margin-right: 260px;
-        background-image: url(../img/talebobbel.png);
+    .speech-bubble:after {
+    	margin-top: -10px;
+    	margin-right: -25px;
     }
-    .km1{
-        font-size: 12px;
-        margin-top: -60px;
-        margin-left: -5px;
+    .speech-bubble2{
+        width: 100px;
+        height: 100px;
     }
-    .km2{
-        font-size: 12px;
-        margin-top: -60px;
-        margin-right: 5px;
+    .speech-bubble2:after {
+    	border: 28px solid transparent;
+    	border-left-color: white;
+    	border-top: 0;
+    	margin-top: -10px;
+    	margin-left: 95px;
+    }
+    .bubble-text{
+        font-size: 16px;
     }
     .kambag{
         height: 0px;
