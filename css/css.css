@@ -737,16 +737,20 @@ cursor: pointer;
     .aaben{
         background-color: #010736;
         height: 50px;
-        width: 50px;
+        width: 100vw;
         color: white;
+        justify-content: flex-start;
+        padding-left: 20px;
     }
     .luk{
         background-color: #010736;
         height: 50px;
-        width: 50px;
+        width: 100vw;
         display: none;
         color: white;
         border-bottom: 1px solid #cd9508;
+        justify-content: flex-start;
+        padding-left: 20px;
     }
     .mobile-menu{
         display: none;
