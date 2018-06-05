@@ -72,7 +72,7 @@
                         </h5>
                       </div>
                     <div id="booket">
-                      <h5 class="margin-t-20 bold">Tak for din booking. Du vil modtage en bekræftelse på emial snart. Vi glæder os til at se jer!</h5>
+                      <h5 class="margin-t-20 bold">Tak for din booking. Du vil modtage en bekræftelse på email snart. Vi glæder os til at se jer!</h5>
                     </div>
                     <div id="erbooket">
                       <h5 class="margin-t-20 bold">Du har allerede booket med denne mail, er du sikker på, at du vil booke igen?</h5>
@@ -80,11 +80,11 @@
                 </div>
                   <div class="column">
                     <form class="bform">
-                      <input id="navn" class="fnavn book-fnavn" type="text" name="fname" placeholder="Fornavn">
-                      <input class="enavn book-enavn" type="text" name="lname" placeholder="Efternavn">
-                      <input id="email" class="email book-mail" type="email" name="mail" placeholder="E-mail">
+                      <input id="navn" class="fnavn book-fnavn" type="text" name="fname" placeholder="*Fornavn">
+                      <input class="enavn book-enavn" type="text" name="lname" placeholder="*Efternavn">
+                      <input id="email" class="email book-mail" type="email" name="mail" placeholder="*E-mail">
                       <select class="gæster book-gæster" name="gæster">
-                        <option value="" diabled selected>Antal gæster</option>
+                        <option value="" diabled selected>*Antal gæster</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -93,9 +93,12 @@
                         <option value="6">6</option>
                         <option value="7">7</option>
                       </select>
-                      <input placeholder="Ankomst" class="ankomst book-ankomst" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
-                      <input placeholder="Afrejse" class="afrejse book-afrejse" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+                      <input placeholder="*Ankomst" class="ankomst book-ankomst" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+                      <input placeholder="*Afrejse" class="afrejse book-afrejse" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
                       <textarea  placeholder="Evt. kommentarer..." class="kommentarer" name="kommentar"></textarea>
+                      <div class="felter">
+                        Felter markeret med * skal udfyldes!
+                      </div>
                       <button id="setdata" class="send margin-t-10 tjek-book" type="button">Send</button>
                     </form>
                   </div>

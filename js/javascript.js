@@ -17,7 +17,6 @@ function setData(event) {
 
   var tjekMail = localStorage.getItem("mail");
 
-
   if (mailValue == tjekMail) {
     erbooket.style.display = "block";
     booket.style.display = "none";
@@ -30,15 +29,12 @@ function setData(event) {
 
   var sendData = document.querySelector("#setdata");
 
-
   if(sendData){
   sendData.addEventListener("click", setData, function(event){
       sendData.style.display = "block";
   })};
 
   var husk = document.querySelector("#husk");
-
-
 
   function tjekInputForBook(event) {
       var forBookFnavn = document.querySelector(".book-fnavn");
@@ -54,7 +50,6 @@ function setData(event) {
       var forBookGæsterne = forBookGæster.value;
       var forBookAnkomsten = forBookAnkomst.value;
       var forBookAfrejsen = forBookAfrejse.value;
-
 
       var inputGjort = document.querySelector("#booket");
       var inputMangler = document.querySelector(".mangler-input");
@@ -72,6 +67,7 @@ function setData(event) {
   if (tjekInputFra){
       tjekInputFra.addEventListener("click", tjekInputForBook);
   }
+
 
 /* Kampagne */
 var modalbackground = document.querySelector(".modalbackground");
