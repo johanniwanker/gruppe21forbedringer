@@ -693,9 +693,6 @@ cursor: pointer;
     .content{
         width: 100%;
     }
-}
-
-@media screen and (max-width: 425px) {
     .full-screen{
         display: none;
     }
@@ -738,6 +735,10 @@ cursor: pointer;
     footer{
         height: 100%;
     }
+}
+
+@media screen and (max-width: 425px) {
+
 
     .imgomos {
       display: none;
