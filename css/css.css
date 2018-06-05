@@ -681,11 +681,15 @@ cursor: pointer;
     .eighty{
         width: 100%;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .content{
-        width: 100%;
+    .klister-tekst2{
+        font-size: 16px;
+    }
+    .klister-tekst3{
+        font-size: 16px;
+    }
+    .klistermaerke2{
+        margin-top: 125px;
+        margin-left: 50px;
     }
 }
 
@@ -735,11 +739,14 @@ cursor: pointer;
     footer{
         height: 100%;
     }
+    .klistermaerke2{
+        width: 150px;
+        height: 50px;
+        margin-top: 75px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-
-
     .imgomos {
       display: none;
     }
@@ -755,5 +762,29 @@ cursor: pointer;
       display: flex;
       flex: 1;
       flex-direction: column;
+    }
+    .klistermaerke2{
+        width: 85px;
+        height: 35px;
+        margin-top: 170px;
+        margin-left: 0px;
+    }
+    .klister-tekst2{
+        font-size: 12px;
+    }
+    .klister-tekst3{
+        font-size: 12px;
+    }
+    .klister-tekst{
+        font-size: 16px;
+    }
+    .indexoverskrift{
+        margin-top: 50px;
+    }
+    .kort-newsfeed{
+        flex-direction: column;
+    }
+    .kort-newsfeed .column{
+        width: 100%;
     }
 }
