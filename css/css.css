@@ -972,6 +972,8 @@ cursor: pointer;
     }
     .marginmobr {
       margin-right: 20px;
-
+    }
+    .lineheigtmob {
+      line-height: 1.4;
     }
 }
