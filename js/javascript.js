@@ -30,11 +30,13 @@ function setData(event) {
   var sendData = document.querySelector("#setdata");
 
   if(sendData){
-  sendData.addEventListener("click", setData, function(event){
+  sendData.addEventListener("click", function(event){
       sendData.style.display = "block";
   })};
 
   var husk = document.querySelector("#husk");
+
+
 
   function tjekInputForBook(event) {
       var forBookFnavn = document.querySelector(".book-fnavn");
@@ -58,6 +60,7 @@ function setData(event) {
             inputGjort.style.display = "block";
             inputMangler.style.display = "none";
   }else{
+        sendData.addEventListener("click", setData);
         inputMangler.style.display = "block";
         inputGjort.style.display = "none";
   }
