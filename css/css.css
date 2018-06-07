@@ -967,4 +967,11 @@ cursor: pointer;
         margin-top: -100px;
         width: 80%;
     }
+    .marginknap {
+      margin: 0 10px 20px 10px;
+    }
+    .marginmobr {
+      margin-right: 20px;
+
+    }
 }
