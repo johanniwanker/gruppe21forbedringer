@@ -615,6 +615,7 @@ cursor: pointer;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-top: -10px;
 }
 .lukModal:hover{
     color: black;
