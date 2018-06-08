@@ -391,6 +391,37 @@ margin-top: 8%;
 	margin-top: -24px;
 	margin-left: -45px;
 }
+.modaltalebobbel1 {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 20px;
+    width: 50%;
+}
+.modaltalebobbel2 {
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px 20px;
+  width: 50%;
+ }
+ .modaltalebobbel3 {
+   background-color: #ffffff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 10px 20px;
+   width: 25%;
+  }
 .ledesend {
   background-color: #010736;
   color: white;
@@ -597,39 +628,6 @@ cursor: pointer;
 .kambag {
   height: 700px;
 }
-
-.modaltalebobbel1 {
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 10px 20px;
-    width: 50%;
-}
-.modaltalebobbel2 {
-  background-color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 10px 20px;
-  width: 50%;
- }
- .modaltalebobbel3 {
-   background-color: #ffffff;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   padding: 10px 20px;
-   width: 25%;
-  }
-
   .close:hover, .close2:hover, .close3:hover {
     cursor:pointer;
   }
