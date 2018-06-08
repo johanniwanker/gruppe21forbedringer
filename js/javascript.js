@@ -10,10 +10,9 @@ function gemData(mail) {
   setLocal(newMail);
 }
 
-function setData(event) {
-  var mail = document.querySelector('#email');
+function setData(mail) {
 
-  var mailValue = mail.value;
+  var mailValue = mail;
 
   var tjekMail = localStorage.getItem("mail");
 
@@ -23,7 +22,7 @@ function setData(event) {
   } else {
     booket.style.display = "block";
     erbooket.style.display ="none";
-    gemData(mail.value);
+    gemData(mailValue);
   }
 }
 
@@ -35,8 +34,6 @@ function setData(event) {
   })};
 
   var husk = document.querySelector("#husk");
-
-
 
   function tjekInputForBook(event) {
       var forBookFnavn = document.querySelector(".book-fnavn");
@@ -59,14 +56,15 @@ function setData(event) {
       if(forBookAfrejsen != '' && forBookAnkomst != '' && forBookGæsterne != '' && forBookMailen != '' && forBookEnavnet != '' && forBookFnavnet != ''){
             inputGjort.style.display = "block";
             inputMangler.style.display = "none";
+            setData(forBookMailen);
   }else{
-        sendData.addEventListener("click", setData);
         inputMangler.style.display = "block";
         inputGjort.style.display = "none";
   }
   }
 
   var tjekInputFra = document.querySelector(".tjek-book");
+
   if (tjekInputFra){
       tjekInputFra.addEventListener("click", tjekInputForBook);
   }
