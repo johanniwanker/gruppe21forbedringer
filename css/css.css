@@ -414,7 +414,6 @@ margin-top: 8%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -428,7 +427,6 @@ margin-top: 8%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  height: 30%;
   padding: 1% 2% 4% 2%;
   width: 50%;
  }
@@ -438,7 +436,6 @@ margin-top: 8%;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-   height:3%;
    padding: 1% 2% 3% 2%;
    width: 25%;
   }
@@ -677,7 +674,6 @@ cursor: pointer;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-   height:8%;
    padding: 1% 2% 3% 2%;
    width: 25%;
   }
@@ -731,18 +727,9 @@ cursor: pointer;
         margin-top: 125px;
         margin-left: 50px;
     }
-    .modaltalebobbel1{
-        height: 200px;
-    }
-    .modaltalebobbel2{
-        height: 240px;
-    }
     .modaltalebobbel2 form{
         width: 75%;
         margin-left: 10px;
-    }
-    .modaltalebobbel3{
-        height: 75px;
     }
 }
 
@@ -801,16 +788,13 @@ cursor: pointer;
         height: 600px;
     }
     .modaltalebobbel1{
-        height: 250px;
-        width: 60%;
+        width: 80%;
     }
     .modaltalebobbel2{
-        height: 275px;
-        width: 60%;
+        width: 80%;
     }
     .modaltalebobbel3{
-        height: 40px;
-        width: 60%;
+        width: 80%;
     }
     .speech-bubble, .speech-bubble2{
         width: 200px;
@@ -818,6 +802,10 @@ cursor: pointer;
     }
     .bubble-text{
         font-size: 22px;
+    }
+    .modal-boks{
+        margin-top: -100px;
+        width: 80%;
     }
 }
 
@@ -930,16 +918,13 @@ cursor: pointer;
         height: 0px;
     }
     .modaltalebobbel1{
-        height: 350px;
         width: 80%;
     }
     .modaltalebobbel2{
-        height: 475px;
         width: 80%;
         margin-top: 0px;
     }
     .modaltalebobbel3{
-        height: 90px;
         width: 80%;
     }
     .column60{
@@ -959,10 +944,6 @@ cursor: pointer;
     }
     .padbot .width-25 h3{
         margin-top: 50px;
-    }
-    .modal-boks{
-        margin-top: -100px;
-        width: 80%;
     }
     .marginknap {
       margin: 0 10px 20px 10px;
