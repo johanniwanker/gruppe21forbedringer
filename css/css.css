@@ -331,24 +331,7 @@ margin-top: 8%;
   width:25%;
   height: 25%;
 }
-/* .talebobbel {
-  position: absolute;
-  width: 35%;
-  height: 50%;
-  left: 0;
-  background-image: url(../img/talebobbel.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.talebobbel2 {
-  position: absolute;
-  right:0;
-  width: 35%;
-  height: 50%;
-  background-image: url(../img/talebobbel2.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
+
 .talebobbel:hover, .talebobbel2:hover, .ledesend:hover{
   cursor: pointer;
 }
@@ -408,37 +391,6 @@ margin-top: 8%;
 	margin-top: -24px;
 	margin-left: -45px;
 }
-.modaltalebobbel1 {
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 1% 2% 4% 2%;
-    width: 50%;
-}
-.modaltalebobbel2 {
-  background-color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 1% 2% 4% 2%;
-  width: 50%;
- }
- .modaltalebobbel3 {
-   background-color: #ffffff;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   padding: 1% 2% 3% 2%;
-   width: 25%;
-  }
 .ledesend {
   background-color: #010736;
   color: white;
