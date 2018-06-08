@@ -136,7 +136,7 @@ close3.addEventListener("click", function(event){
     modalbackground3.style.display = "none";
 })};
 
-window.onclick = function(event) {
+document.onclick = function(event) {
     if (event.target == modalbackground) {
         modalbackground.style.display = "none";
     }
