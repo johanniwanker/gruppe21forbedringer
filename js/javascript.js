@@ -1,13 +1,8 @@
 /* Booking */
 
-function setLocal(localName) {
-  var email = localName;
-  localStorage.setItem("mail", email);
-}
-
 function gemData(mail) {
   var newMail = mail;
-  setLocal(newMail);
+  localStorage.setItem("mail", newMail);
 }
 
 function setData(mail) {
@@ -25,15 +20,6 @@ function setData(mail) {
     gemData(mailValue);
   }
 }
-
-  var sendData = document.querySelector("#setdata");
-
-  if(sendData){
-  sendData.addEventListener("click", function(event){
-      sendData.style.display = "block";
-  })};
-
-  var husk = document.querySelector("#husk");
 
   function tjekInputForBook(event) {
       var forBookFnavn = document.querySelector(".book-fnavn");
@@ -205,11 +191,6 @@ function tjekInputForVirk(event) {
     var forVirkMail = document.querySelector(".for-virk-mail");
     var forVirkKommentar = document.querySelector(".for-virk-kommentar");
 
-
-function store(){
-    var inputEmail= document.getElementById("email");
-    localStorage.setItem("email", inputEmail.value);
-  };
     var forVirkNavnet = forVirkNavn.value;
     var forVirkMailen = forVirkMail.value;
     var forVirkKommentaren = forVirkKommentar.value;
@@ -223,8 +204,7 @@ function store(){
 }else{
       inputNej.style.display = "block";
       inputJa.style.display = "none";
-}
-}
+}}
 
 var tjekInputTil = document.querySelector(".tjek-input");
 if (tjekInputTil){
